@@ -1,0 +1,276 @@
+html{
+    /* For a gradient background */
+    /* This provides line wise gradient */
+    /* "to right" makes the gradient flow from left side to right side, and "90deg" can do the same thing */
+    background-image: linear-gradient(/*to right ,*/ #ffc25f, #FC5E55, #FA4083);
+}
+
+body{
+    background-image: url(images/lion-background.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    /* Font family from google */
+    font-family: 'Averia Serif Libre', cursive;
+    /* font-family: 'Bangers', cursive; */
+    /* font-family: 'Vast Shadow', cursive; */
+
+    font-size: 1rem;
+    /* Text color */
+    color: whitesmoke;
+}
+
+.container{
+    width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    /* This attribute means min height of container should be 400px but if the content in going outise the give range then increase size automatically to wrap ecerything inside of the container */
+    min-height: 400px;
+}
+
+header{
+    /* background-color: rgb(11, 161, 11); */
+
+    min-height: 100px;
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    border-bottom: 3px solid whitesmoke;
+}
+
+/* Justify works fine without using these conditions */
+/* .logo{
+    width: 15%;
+}
+nav{
+    width: 25%;
+} */
+
+main{
+    min-height: 300px;
+
+    /* This is used to adjust the heroboxes in horizontal manner inside the main */
+    /* FLEX only works between direct parents and childs */
+    display: flex;
+
+    /* This adjusts "5%" the space between the boxes */
+    /* justify-content: space-between; */
+
+    /* This puts all the inside stuff in the center vertically */
+    align-items: center;
+}
+
+/* For Contact-Us file */
+.main2{
+    min-height: 300px;
+    padding-top: 50px;
+}
+
+.herobox1{
+    /* This makes the box1 to get "2" part out of 3 from the parent div(main) , ie 66.6% */
+    flex: 2;
+    padding-right: 100px;
+}
+
+.herobox2{
+    /* This makes the box2 to get "1" part out of 3 from the parent div(main) , ie 33.3% */
+    flex: 1;
+}
+
+.herobox2 img{
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.748);
+}
+
+.cards{
+    padding-top: 25px;
+    /* Horizontally adjusts the inner divs */
+    display: flex;
+    /* Adjusts the space leftout between the child divs */
+    justify-content: space-around;
+    text-align: center;
+}
+
+.cards1{
+    background-image: url(images/bg-card-img1.jpg);
+    background-size: cover;
+    background-position: bottom;
+    min-height: 250px;
+    width: 25%;
+    border-radius: 30px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.748);
+}
+
+.cards2{
+    background-image: url(images/bg-card-img2.jpg);
+    background-size: cover;
+    background-position: bottom;
+    min-height: 250px;
+    width: 25%;
+    border-radius: 30px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.748);
+}
+
+.cards3{
+    background-image: url(images/bg-card-img3.jpg);
+    background-size: cover;
+    background-position: left;
+    min-height: 250px;
+    width: 25%;
+    border-radius: 30px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.748);
+}
+
+.cards1, .cards2, .cards3{
+    padding: 20px 30px;
+    box-sizing: content-box;
+}
+
+a{
+    font-size: 14px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+h1{
+    font-family: 'Bangers', cursive;
+    padding-bottom: 12px;
+    font-size: 5rem;
+    color: brown;
+    text-shadow: 3px 4px 5px blanchedalmond;
+}
+
+h2{
+    font-family: 'Vast Shadow', cursive;
+    padding-bottom: 12px;
+    font-size: 2rem;
+    margin-top: 10px;
+}
+
+p{
+    /* space between lines */
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+.cards p{
+    line-height: 15px;
+    font-size: 0.75rem;
+    margin: 10px 30px 20px 30px;    /* top right bottom left */
+
+    /* if given = margin: 10px 30px , this means top & bottom are 10px, while right & left are 30px*/
+}
+
+.cards i{
+    margin-top: 15px;
+    font-size: 75px;
+}
+
+.buttons{
+    color: #FC5E55;
+    padding: 10px 25px;
+    background-color: aliceblue;
+    border-radius: 5px 15px;
+    box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.748);   /* right bottom shade color */
+}
+
+/* Pseudo Class */
+.buttons:hover{
+    background-color: blanchedalmond;
+    transition: 0.5s;
+}
+
+a.buttons{
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* Drop Down Menu */
+.navbuttons{
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    padding: 10px 20px;
+    border: 2px solid white;    /* border-width border-style border-color */
+    border-radius: 5px;
+    margin-left: 15px;
+}
+
+.dropdown{
+    display: none;
+    position: absolute;
+    z-index: 10;
+    padding-top: 20px;
+    margin-left: -55px;
+}
+
+.navbuttons:hover .dropdown{
+    display: block;
+}
+
+.dropdown .navbuttons{
+    width: 150px;
+}
+
+.dropdown .navbuttons:hover{
+    background-color: brown;
+    transition-duration: 0.5s;
+}
+
+.testimonials{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.test{
+    border: 5px double whitesmoke;
+    padding: 50px;
+    width: 47%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+
+/* Pseudo Class */
+/* This will work for the last child tag under the div class "test" */
+/* .test :last-child{
+    font-size: 0.8rem;
+    text-align: right;
+} */
+
+/* This will work for the last "p" child tag  under the div class "test"*/
+.test p:last-of-type{
+    font-size: 0.8rem;
+    text-align: right;
+}
+
+form{
+    margin: 40px 0px;
+}
+
+.inputwrapper{
+    margin-bottom: 20px;
+}
+
+input[type=text], input[type=email], textarea{
+    padding: 10px 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.newline{
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type=radio]{
+    margin-right: 5px;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* px is used for static size */
+
+        /* rem is used for variable size */
+        /* It works wrt the root's default size , ie "16px of html tag"*/
+
+        /* em is also used for variable size */
+        /* But It works wrt the nearest parent's default size , ie the parent for that tag*/
+        /* If the parent tag is not present then it will work wrt the root tag, ie similar to rem */
+
+        .badsize{
+            font-size: 48px;
+        }
+        .goodsize{
+            font-size: 2em;      /* This will work wrt the size of mybox class */
+        }
+        .mybox{
+            font-size: 3rem;    /* This will work wrt the size of root class */
+        }
+    </style>
+</head>
+<body>
+    <p class="badsize">Hello World</p>
+
+    <p class="goodsize">Hello World</p>
+
+    <div class="mybox">
+        <p class="goodsize">Hello World</p>
+    </div>
+</body>
+</html>

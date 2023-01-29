@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike Repairs</title>
+
+    <!-- This is the file of Eric Meyer CSS-reset -->
+    <link rel="stylesheet" href="css-reset.css">
+
+    <!-- This is my css file... -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Link for using google forms -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&family=Bangers&family=Vast+Shadow&display=swap" rel="stylesheet">
+
+    <!-- Link for the font images from font awsome site -->
+    <script src="https://kit.fontawesome.com/c77edabd34.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.svg" alt="logo-for-the-shop">
+                </a>
+            </div>
+
+            <nav>
+                <div class="navbuttons">
+                    <a href="#">BOOK ONLINE</a>
+                    <div class="dropdown">
+                        <div class="navbuttons">
+                            <a href="#">Onsite Services</a>
+                        </div>
+                        <div class="navbuttons">
+                            <a href="#">Parts Delivery</a>
+                        </div>
+                        <div class="navbuttons">
+                            <a href="#">Request Callback</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="navbuttons">
+                    <a href="#">ABOUT</a>
+                </div>
+
+                <div class="navbuttons">
+                    <a href="#">CONTACT</a>
+                </div>
+            </nav>
+        </header>
+
+
+        <div class="main2">
+            <h1>Contact Details</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam assumenda aut atque molestias veritatis recusandae quis velit iste esse! Delectus!</p>
+
+            <!-- Email function don't work properly
+                because we have not hosted the website on any platform -->
+            <form action="mail.php" method="post">
+                <div class="inputwrapper">
+                    <label for="name" class="newline">First Name</label>
+                    <input type="text" name="name" id="name" placeholder="First Name">
+                </div>
+
+                <div class="inputwrapper">
+                    <label for="email" class="newline">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Email">
+                </div>
+
+                <div class="inputwrapper">
+                    <textarea name="message" id="message" cols="50" rows="5" placeholder="Enter Reviews..."></textarea>
+                </div>
+
+                <div class="inputwrapper">
+                    <input type="checkbox" name="sub" id="sub" value="Yes Sign I want to Sign-Up" checked>
+                    <label for="sub">Sign-Up for newsletter</label>
+                </div>
+
+                <div class="inputwrapper">
+                    <p>How do you want to be contacted?</p>
+                    <input type="radio" name="contact-pref" id="phone" value="phone">
+                    <label for="phone">Phone</label>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    <input type="radio" name="contact-pref" id="Email" value="Email">
+                    <label for="Email">Email</label>
+                </div>
+
+                <div class="inputwrapper">
+                    <select name="country" id="country">
+                        <option value="Not-Chosen">Select your country</option>
+                        <option value="India">India</option>
+                        <option value="America">America</option>
+                        <option value="Russia">Russia</option>
+                    </select>
+                </div>
+
+                <!-- <div class="inputwrapper">
+                    <input type="date" name="" id="">
+                    <input type="color" name="" id="">
+                </div> -->
+                <input type="submit" value="Fire Away!" class="buttons">
+            </form>
+        </div>
+
+
+        <div class="cards">
+            <div class="cards1">
+                <a href="#">
+                    <!-- here i tag is used as icon tag -->
+                    <i class="fa-solid fa-motorcycle"></i>
+                    <h2>BOOK ONLINE</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex eaque sequi adipisci natus a at!</p>
+                </a>
+            </div>
+
+            <div class="cards2">
+                <a href="#">
+                    <i class="fa-solid fa-users-gear"></i>
+                    <h2>SERVICE TYPES</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex eaque sequi adipisci natus a at!</p>
+                </a>
+            </div>
+
+            <div class="cards3">
+                <a href="#">
+                    <i class="fa-solid fa-square-phone"></i>
+                    <h2>CALL FOR ADVICE</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex eaque sequi adipisci natus a at!</p>
+                </a>
+            </div>
+        </div>
+
+        <div class="testimonials">
+            <div class="test">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex eaque sequi adipisci natus a at!</p>
+                <p>Lorem, ipsum.</p>
+            </div>
+
+            <div class="test">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex eaque sequi adipisci natus a at!</p>
+                <p>Lorem, ipsum.</p>
+            </div>
+
+            <div class="test">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex eaque sequi adipisci natus a at!</p>
+                <p>Lorem, ipsum.</p>
+            </div>
+
+            <div class="test">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex eaque sequi adipisci natus a at!</p>
+                <p>Lorem, ipsum.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
